@@ -32,10 +32,12 @@ const Star = ({ countryName, favourite }: StarProps) => {
         !currentUser
           ? () => addToFavAfterLogin(countryName)
           : () => changeFavouriteStatus(countryName)
-      }>
+      }
+    >
       <div
         data-testid="star-icon"
-        className={cn('star-icon', { ['filled']: favourite && currentUser })}>
+        className={cn('star-icon', { ['filled']: favourite && currentUser })}
+      >
         <StarIcon />
       </div>
     </button>

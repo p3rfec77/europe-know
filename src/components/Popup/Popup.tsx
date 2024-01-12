@@ -13,7 +13,8 @@ const Popup = ({ children, closePopup }: PopUpProps) => {
       <div
         className="popup-content"
         onClick={(e) => e.stopPropagation()}
-        data-testid="popup-content">
+        data-testid="popup-content"
+      >
         {children}
       </div>
     </div>
